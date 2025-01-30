@@ -89,6 +89,7 @@ public class RestApiController {
         return studentDatabase.values();
     }
 
+    /* CONSUMING A RESTFUL WEB SERVICE (API) */
     /**
      * Get a list of universities from hipolabs and make them available at our own API
      * endpoint.
@@ -122,6 +123,7 @@ public class RestApiController {
 
     }
 
+    /* CONSUMING A RESTFUL WEB SERVICE (API) */    
     /**
      * Get a list of 15 GSO breweries and make them available at our own API endpoint.
      *
@@ -157,6 +159,7 @@ public class RestApiController {
         }
     }
 
+    /* CONSUMING A RESTFUL WEB SERVICE (API) */
     /**
      * Get info about a fruit from fruityVice.
      *
