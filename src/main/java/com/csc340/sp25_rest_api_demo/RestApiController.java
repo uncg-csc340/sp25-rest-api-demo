@@ -89,7 +89,6 @@ public class RestApiController {
         return studentDatabase.values();
     }
 
-    /* CONSUMING A RESTFUL WEB SERVICE (API) */
     /**
      * Get a list of universities from hipolabs and make them available at our own API
      * endpoint.
@@ -99,6 +98,8 @@ public class RestApiController {
     @GetMapping("/univ")
     public Object getUniversities() {
         try {
+            
+            //CONSUMING A RESTFUL WEB SERVICE (API)
             String url = "http://universities.hipolabs.com/search?name=sports";
             RestTemplate restTemplate = new RestTemplate();
             ObjectMapper mapper = new ObjectMapper();
@@ -122,8 +123,7 @@ public class RestApiController {
         }
 
     }
-
-    /* CONSUMING A RESTFUL WEB SERVICE (API) */    
+    
     /**
      * Get a list of 15 GSO breweries and make them available at our own API endpoint.
      *
@@ -132,6 +132,7 @@ public class RestApiController {
     @GetMapping("/brew")
     public Object getBreweries() {
         try {
+            //CONSUMING A RESTFUL WEB SERVICE (API)
             String url = "https://api.openbrewerydb.org/v1/breweries?by_city=greensboro";
             RestTemplate restTemplate = new RestTemplate();
             ObjectMapper mapper = new ObjectMapper();
@@ -159,7 +160,6 @@ public class RestApiController {
         }
     }
 
-    /* CONSUMING A RESTFUL WEB SERVICE (API) */
     /**
      * Get info about a fruit from fruityVice.
      *
@@ -169,6 +169,7 @@ public class RestApiController {
     @GetMapping("/fruit")
     public Object getFruit(@RequestParam(value = "name", defaultValue = "kiwi") String fruitName) {
         try {
+            //CONSUMING A RESTFUL WEB SERVICE (API)
             String url = "https://www.fruityvice.com/api/fruit/" + fruitName;
             RestTemplate restTemplate = new RestTemplate();
             ObjectMapper mapper = new ObjectMapper();
